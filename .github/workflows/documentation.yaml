@@ -31,7 +31,7 @@ jobs:
       - name: Format with Black
         uses: psf/black@stable
         with:
-          options: "--check --verbose"
+          options: "--verbose"
           src: "./forge"
           version: "~= 24.2"
       - name: Commit files
