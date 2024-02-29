@@ -21,6 +21,30 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  TruffleHog:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: TruffleHog OSS
+        id: trufflehog
+        uses: trufflesecurity/trufflehog@main
+        continue-on-error: true
+        with:
+          path: .
+          base: "${{ github.event.repository.default_branch }}"
+          head: HEAD
+          extra_args: --debug
+
+      - name: Scan Results Status
+        if: steps.trufflehog.outcome == 'failure'
+        run: exit 1
   Format-Black:
     runs-on: ubuntu-latest
     steps:
@@ -57,7 +81,7 @@ jobs:
       - uses: actions/setup-python@v5
       - name: Install dependencies
         run: |
-          pip install -e .'[all]'
+          pip install .'[all]'
       - name: Sphinx build
         run: |
           cd docs && make html
