@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: forge
+Version: 0.0.1a0
+License: MIT License
+Requires-Python: >=3.10
+Requires-Dist: rich
+Requires-Dist: loguru
+Provides-Extra: dev
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinxcontrib.katex; extra == "dev"
+Requires-Dist: sphinx_copybutton; extra == "dev"
+Requires-Dist: myst-parser; extra == "dev"
+Requires-Dist: furo; extra == "dev"
+Provides-Extra: all
+Requires-Dist: pandas; extra == "all"
+Requires-Dist: sphinx; extra == "all"
+Requires-Dist: sphinxcontrib.katex; extra == "all"
+Requires-Dist: sphinx_copybutton; extra == "all"
+Requires-Dist: myst-parser; extra == "all"
+Requires-Dist: furo; extra == "all"

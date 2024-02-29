@@ -1,0 +1,17 @@
+rich
+loguru
+
+[all]
+pandas
+sphinx
+sphinxcontrib.katex
+sphinx_copybutton
+myst-parser
+furo
+
+[dev]
+sphinx
+sphinxcontrib.katex
+sphinx_copybutton
+myst-parser
+furo
