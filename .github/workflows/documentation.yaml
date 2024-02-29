@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-python@v3
       - name: Install dependencies
         run: |
-          pip install sphinx sphinxcontrib.katex sphinx_copybutton myst-parser furo
+          pip install -e .'[all]'
       - name: Sphinx build
         run: |
           cd docs && make html
