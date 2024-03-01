@@ -8,8 +8,6 @@ Welcome to Forge's documentation!
 
 .. toctree::
    runner
-   :maxdepth: 2
-   :caption: Contents:
 
 
 
