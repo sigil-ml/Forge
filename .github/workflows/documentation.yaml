@@ -81,7 +81,7 @@ jobs:
       - uses: actions/setup-python@v5
       - name: Install Sphinx
         run: |
-          apt-get install python3-sphinx
+          sudo apt-get install python3-sphinx
       - name: Install dependencies
         run: |
           pip install .'[all]'
