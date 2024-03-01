@@ -10,12 +10,14 @@ requires-python = ">= 3.10"
 dependencies = [
     "rich",
     "loguru",
-    "click"
+    "click",
+    "pandas",
+    "numpy"
 ]
 
 [project.optional-dependencies]
 dev = ["sphinx", "sphinxcontrib.katex", "sphinx_copybutton", "myst-parser", "pydata-sphinx-theme"]
-all = ["pandas", "sphinx", "sphinxcontrib.katex", "sphinx_copybutton", "myst-parser", "pydata-sphinx-theme"]
+all = ["sphinx", "sphinxcontrib.katex", "sphinx_copybutton", "myst-parser", "pydata-sphinx-theme"]
 
 [project.scripts]
 forge = "forge.__main__:cli"
