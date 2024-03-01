@@ -6,14 +6,15 @@ Requires-Python: >=3.10
 Requires-Dist: rich
 Requires-Dist: loguru
 Requires-Dist: click
-Provides-Extra: dev
-Requires-Dist: sphinx; extra == "dev"
-Requires-Dist: sphinxcontrib.katex; extra == "dev"
-Requires-Dist: sphinx_copybutton; extra == "dev"
-Requires-Dist: myst-parser; extra == "dev"
-Requires-Dist: pydata-sphinx-theme; extra == "dev"
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinxcontrib.katex; extra == "doc"
+Requires-Dist: sphinx_copybutton; extra == "doc"
+Requires-Dist: myst-parser; extra == "doc"
+Requires-Dist: pydata-sphinx-theme; extra == "doc"
 Provides-Extra: all
-Requires-Dist: pandas; extra == "all"
 Requires-Dist: sphinx; extra == "all"
 Requires-Dist: sphinxcontrib.katex; extra == "all"
 Requires-Dist: sphinx_copybutton; extra == "all"

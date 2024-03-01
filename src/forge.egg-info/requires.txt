@@ -1,16 +1,17 @@
 rich
 loguru
 click
+pandas
+numpy
 
 [all]
-pandas
 sphinx
 sphinxcontrib.katex
 sphinx_copybutton
 myst-parser
 pydata-sphinx-theme
 
-[dev]
+[doc]
 sphinx
 sphinxcontrib.katex
 sphinx_copybutton
