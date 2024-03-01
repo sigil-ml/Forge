@@ -14,6 +14,7 @@ Requires-Dist: sphinxcontrib.katex; extra == "doc"
 Requires-Dist: sphinx_copybutton; extra == "doc"
 Requires-Dist: myst-parser; extra == "doc"
 Requires-Dist: pydata-sphinx-theme; extra == "doc"
+Requires-Dist: torch; extra == "doc"
 Provides-Extra: all
 Requires-Dist: sphinx; extra == "all"
 Requires-Dist: sphinxcontrib.katex; extra == "all"

@@ -17,3 +17,4 @@ sphinxcontrib.katex
 sphinx_copybutton
 myst-parser
 pydata-sphinx-theme
+torch
