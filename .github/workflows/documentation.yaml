@@ -84,7 +84,7 @@ jobs:
           sudo apt-get install python3-sphinx
       - name: Install dependencies
         run: |
-          pip install '.[doc]'
+          pip install sphinx sphinxcontrib.katex sphinx_copybutton myst-parser pydata-sphinx-theme
       - name: Sphinx build
         run: |
           cd docs && make html
