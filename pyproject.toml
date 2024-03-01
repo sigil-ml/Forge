@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-doc = ["sphinx", "sphinxcontrib", "sphinxcontrib.katex", "sphinx_copybutton", "myst-parser", "pydata-sphinx-theme"]
+doc = ["sphinx", "sphinxcontrib.katex", "sphinx_copybutton", "myst-parser", "pydata-sphinx-theme"]
 all = ["sphinx", "sphinxcontrib.katex", "sphinx_copybutton", "myst-parser", "pydata-sphinx-theme"]
 
 [project.scripts]
