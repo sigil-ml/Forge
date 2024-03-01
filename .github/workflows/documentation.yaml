@@ -84,7 +84,7 @@ jobs:
           sudo apt-get install python3-sphinx
       - name: Install dependencies
         run: |
-          pip install .'[all]'
+          pip install -e .'[all]'
       - name: Sphinx build
         run: |
           cd docs && make html
