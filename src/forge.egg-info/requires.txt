@@ -1,5 +1,6 @@
 rich
 loguru
+click
 
 [all]
 pandas
@@ -7,11 +8,11 @@ sphinx
 sphinxcontrib.katex
 sphinx_copybutton
 myst-parser
-furo
+pydata-sphinx-theme
 
 [dev]
 sphinx
 sphinxcontrib.katex
 sphinx_copybutton
 myst-parser
-furo
+pydata-sphinx-theme

@@ -5,16 +5,17 @@ License: MIT License
 Requires-Python: >=3.10
 Requires-Dist: rich
 Requires-Dist: loguru
+Requires-Dist: click
 Provides-Extra: dev
 Requires-Dist: sphinx; extra == "dev"
 Requires-Dist: sphinxcontrib.katex; extra == "dev"
 Requires-Dist: sphinx_copybutton; extra == "dev"
 Requires-Dist: myst-parser; extra == "dev"
-Requires-Dist: furo; extra == "dev"
+Requires-Dist: pydata-sphinx-theme; extra == "dev"
 Provides-Extra: all
 Requires-Dist: pandas; extra == "all"
 Requires-Dist: sphinx; extra == "all"
 Requires-Dist: sphinxcontrib.katex; extra == "all"
 Requires-Dist: sphinx_copybutton; extra == "all"
 Requires-Dist: myst-parser; extra == "all"
-Requires-Dist: furo; extra == "all"
+Requires-Dist: pydata-sphinx-theme; extra == "all"
